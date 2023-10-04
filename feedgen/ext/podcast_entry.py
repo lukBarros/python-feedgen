@@ -130,7 +130,7 @@ class PodcastEntryExtension(BaseEntryExtension):
             if itunes_image.endswith('.jpg') or itunes_image.endswith('.jpeg') or itunes_image.endswith('.png') or itunes_image.endswith('.webp') :
                 self.__itunes_image = itunes_image
             else:
-                raise ValueError('Image file must be png or jpg')
+                raise ValueError('Image file must be webp, gif, png or jpg/jpeg')
         return self.__itunes_image
 
     def itunes_duration(self, itunes_duration=None):
