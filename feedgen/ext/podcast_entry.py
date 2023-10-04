@@ -127,7 +127,7 @@ class PodcastEntryExtension(BaseEntryExtension):
         :returns: Image of the podcast.
         '''
         if itunes_image is not None:
-            if itunes_image.endswith('.jpg') or itunes_image.endswith('.jpeg') or itunes_image.endswith('.png') or itunes_image.endswith('.webp') :
+            if itunes_image.endswith('.gif') or itunes_image.endswith('.jpg') or itunes_image.endswith('.jpeg') or itunes_image.endswith('.png') or itunes_image.endswith('.webp') :
                 self.__itunes_image = itunes_image
             else:
                 raise ValueError('Image file must be webp, gif, png or jpg/jpeg')
